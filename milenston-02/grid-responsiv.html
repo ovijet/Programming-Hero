@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-responsive</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .contant img {
+        width: 100%;
+        transition: 0.5s;
+      }
+      .contant:hover img {
+        /* rotate: 360deg; */
+        scale: 1.1;
+      }
+      .contant {
+        border: 1px solid;
+        padding: 10px;
+      }
+
+      @media (max-width: 570px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      @media (min-width: 571px) and (max-width: 800px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contant">
+        <img src="./img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" />
+        <p>$20</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          doloribus voluptatibus deleniti dolorem voluptatem quas tenetur
+          maiores ipsam, voluptates modi?
+        </p>
+      </div>
+      <div class="contant">
+        <img src="./img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" />
+        <p>$20</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          doloribus voluptatibus deleniti dolorem voluptatem quas tenetur
+          maiores ipsam, voluptates modi?
+        </p>
+      </div>
+      <div class="contant">
+        <img src="./img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" />
+        <p>$20</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          doloribus voluptatibus deleniti dolorem voluptatem quas tenetur
+          maiores ipsam, voluptates modi?
+        </p>
+      </div>
+      <div class="contant">
+        <img src="./img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" />
+        <p>$20</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          doloribus voluptatibus deleniti dolorem voluptatem quas tenetur
+          maiores ipsam, voluptates modi?
+        </p>
+      </div>
+      <div class="contant">
+        <img src="./img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" />
+        <p>$20</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          doloribus voluptatibus deleniti dolorem voluptatem quas tenetur
+          maiores ipsam, voluptates modi?
+        </p>
+      </div>
+      <div class="contant">
+        <img src="./img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" />
+        <p>$20</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          doloribus voluptatibus deleniti dolorem voluptatem quas tenetur
+          maiores ipsam, voluptates modi?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

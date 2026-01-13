@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resposive-flex</title>
+    <style>
+        .container{
+            gap: 10px;
+            display: flex;
+        }
+        .box{
+            margin: 10px;  background-color: chartreuse;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .items{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            width:50px;
+            background-color: red;
+            border: 1px solid;
+            margin: 10px;
+            padding: 20px;
+        }
+        @media (max-width:678px){
+            .container{
+                flex-direction: column;
+            }
+            .item{
+                width: 100%;
+                font-size: 50px;
+                color: aliceblue;
+                text-align: center;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>flex1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+          nesciunt laudantium repudiandae inventore quaerat quia fuga iste
+          aperiam consequuntur voluptas necessitatibus est non, atque sint sit
+          possimus ex veritatis blanditiis?
+        </p>
+      </div>
+      <div class="box">
+        <h2>flex2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+          nesciunt laudantium repudiandae inventore quaerat quia fuga iste
+          aperiam consequuntur voluptas necessitatibus est non, atque sint sit
+          possimus ex veritatis blanditiis?
+        </p>
+      </div>
+    </div>
+    <div class="items">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+    </div>
+  </body>
+</html>

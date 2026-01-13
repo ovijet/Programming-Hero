@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    color:#2c3e50;
+    text-transform: capitalize;
+}
+::selection{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e74c3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 9%;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    margin-left: 20px;
+}
