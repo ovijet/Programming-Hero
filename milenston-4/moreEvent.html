@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-m">mouse</button>
+    <input type="text" placeholder="name" id="input">
+
+    <script>
+        let mousebtn= document.getElementById('btn-m')
+        mousebtn.addEventListener('mousedown', function(){
+            console.log('event tiger');
+        })
+        // let inputBtn= document.getElementById('input')
+        // inputBtn.addEventListener('focus', function(){
+        //     console.log('event tiger');
+        // })
+        // let inputBtn= document.getElementById('input')
+        // inputBtn.addEventListener('blur', function(){
+        //     console.log('event tiger');
+        // })
+         document.getElementById('input')
+        .addEventListener('keyup', function(event){
+            console.log('event tiger', event.target.value);
+        })
+    </script>
+</body>
+</html>

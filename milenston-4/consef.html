@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head">hello world</h1>
+
+    <p id="count">0</p>
+    <button id="btn">click me</button>
+
+    <script>
+      // let h1 = document.getElementById('head')
+      // h1.innerText='hello i am ovijit hlader'
+
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let count = document.getElementById("count");
+        let result = count.innerText;
+        result++;
+        count.innerText = result;
+        console.log(result);
+      });
+    </script>
+  </body>
+</html>

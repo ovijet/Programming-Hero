@@ -1,0 +1,45 @@
+
+<html>
+  <head>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <h2>My Todo List</h2>
+
+    <input type="text" id="input" />
+    <button id="addBtn">Add</button>
+
+    <ul id="list"></ul>
+
+    <script>
+      let input = document.getElementById("input");
+      let addBtn = document.getElementById("addBtn");
+      let list = document.getElementById("list");
+
+      addBtn.addEventListener("click", function () {
+        if (input.value === "") {
+          alert("Please write something");
+          return;
+        }
+
+        // নতুন li বানানো
+        let li = document.createElement("li");
+        li.innerText = input.value;
+
+        // Delete button বানানো
+        let delBtn = document.createElement("button");
+        delBtn.innerText = "Delete";
+
+        // Delete কাজ
+        delBtn.addEventListener("click", function () {
+          list.removeChild(li);
+        });
+
+        li.appendChild(delBtn);
+        list.appendChild(li);
+
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>

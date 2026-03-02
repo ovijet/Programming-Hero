@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #post {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .card {
+        border: 1px solid;
+        padding: 10px;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="post"></div>
+    <button onclick="lodePost()">load post</button>
+    <button onclick="dataLode()">data load</button>
+    <script src="./json.js"></script>
+  </body>
+</html>

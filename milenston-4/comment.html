@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .comment {
+        background-color: aquamarine;
+        border-radius: 10px;
+        padding: 10px;
+        border: 3px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>my awesome comment heir</h1>
+    <section>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div id="container">
+        <p class="comment">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quo
+          ipsam ratione minima ipsum atque illo saepe accusantium officia enim.
+        </p>
+        <p class="comment">
+          Accusamus esse consectetur distinctio architecto dolore ullam adipisci
+          quo itaque recusandae accusantium amet minima officiis, odit
+          repudiandae ratione culpa dolor.
+        </p>
+        <p class="comment">
+          Labore ullam quia eum porro numquam amet nihil doloremque fuga beatae
+          inventore odio facilis eveniet nostrum possimus, aperiam sequi
+          delectus?
+        </p>
+      </div>
+      <textarea name="" id="input" cols="30" rows="5"></textarea>
+      <br />
+      <button id="btn">post</button>
+    </section>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        //2 set text input
+        let textarea = document.getElementById("input");
+        let text = textarea.value;
+        //03 set the parent node
+        let commentC = document.getElementById("container");
+        //04
+        let newE = document.createElement("p");
+        newE.classList.add("comment");
+        newE.innerText = text;
+        commentC.appendChild(newE);
+        // 06
+        textarea.value = "";
+      });
+    </script>
+  </body>
+</html>
